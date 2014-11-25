@@ -1,7 +1,9 @@
 <div>
 	<ul id ="users">
-	<%= @user.each do |f| %>
-	<li><%=  f.name %></li>
+	<%= @user.each do |user| %>
+	<li><%=  user.name %>
+	<%= link_to user.name, user_path(user)%></li>
    </ul>
-   <% end%>
+   <% end %>
 </div>
+
